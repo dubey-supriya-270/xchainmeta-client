@@ -1,0 +1,115 @@
+.list-user-files-main-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    height: calc(100% - var(--navbarHeaderHeight));
+}
+
+.add-icon-container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    height: 50px;
+    width: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.list-file-right-container .icon-container {
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+    cursor: pointer;
+}
+
+.list-file-container {
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.list-file-right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.list-file-right-container div {
+    padding: 0px 20px;
+}
+
+.list-file-container .children-container {
+    width: inherit;
+}
+
+.file-info {
+    font-size: 14px;
+    color: #4f4f4f;
+    padding: 5px;
+    text-align: center;
+    margin: 0px 10px;
+    word-break: break-all;
+    width: 200px;
+}
+
+.file-desc {
+    font-size: 12px;
+    color: #828282;
+    padding: 2px;
+    text-align: center;
+}
+
+.no-file-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 50vh;
+}
+
+.no-file-message {
+    text-align: center;
+    color: var(--primaryBlue);
+    margin: auto;
+    font-size: 36px;
+}
+
+.file-content-loader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .list-file-right-container {
+        display: none;
+    }
+    .list-file-container .children-container {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .list-file-right-container-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .file-onboard-date {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .file-onboard-date {
+        margin-left: 40px;
+    }
+}
